@@ -1,7 +1,7 @@
-import ReactDOM from "react-dom/client";
-import React from "react";
 
-function MyButton(props) {
+
+
+function Mybutton(props) {
     const [isClicked, setIsClicked] = React.useState(false);
 
     return React.createElement(
@@ -25,4 +25,4 @@ function MyButton(props) {
 
 const domContainer = document.getElementById('root');
 const root = ReactDOM.createRoot(domContainer);
-root.render(React.createElement(MyButton));
+root.render(React.createElement(Mybutton));
