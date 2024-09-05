@@ -1,0 +1,14 @@
+
+button1 {
+    background-color: skyblue;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+button1:hover {
+    background-color: lightblue;
+}
