@@ -1,0 +1,14 @@
+
+button3 {
+    background-color: #045e20;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #fad347;
+    cursor: pointer;
+}
+
+button3:hover {
+    background-color: #7bdd05;
+}
