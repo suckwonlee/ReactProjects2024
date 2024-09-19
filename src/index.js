@@ -8,16 +8,16 @@ import Library from "./chp03/Library";
 import ConfirmDialog from "./chp04/ConfirmDialog";
 import Clock from "./chp04/Clock";
 import Commentlist from "./chp05/Commentlist";
+import NotificationList from "./chp06/NotificationList";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-setInterval(()=> {
+
     root.render(
         <React.StrictMode>
-            <Commentlist/>
+            <NotificationList/>
         </React.StrictMode>
     );
-},1000);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
