@@ -9,13 +9,15 @@ import ConfirmDialog from "./chp04/ConfirmDialog";
 import Clock from "./chp04/Clock";
 import Commentlist from "./chp05/Commentlist";
 import NotificationList from "./chp06/NotificationList";
+import Accommodate from "./chp07/Accommodate";
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
     root.render(
         <React.StrictMode>
-            <NotificationList/>
+            <Accommodate/>
         </React.StrictMode>
     );
 
