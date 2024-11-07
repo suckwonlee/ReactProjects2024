@@ -1,12 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
+import LogoutButton from "./LogoutButton";
+import LoginButton from "./LoginButton";
 import UserGreating from "./UserGreating";
-import GuestGreating from "./GuestGreating";
-function Greeting(props){
+import GuestGreeting from "./GuestGreating";
+
+
+function Greeting(props) {
     const isLoggedIn = props.isLoggedIn;
-    if(isLoggedIn){
+    if (isLoggedIn) {
         return <UserGreating />;
     }
-    return <GuestGreating/>
+    return <GuestGreeting />;
 }
 
-export default Greeting;
+function LoginControl(props) {
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+    const handleLoginClick = () => {
+        setIsLoggedIn(true);
+    };
+
+    const handleLogoutClick = () => {
+        setIsLoggedIn(false);
+    };
+
+    let btn;
+    if (isLoggedIn) {
+        btn = <LogoutButton onClick={handleLogoutClick} />;
+    } else {
+        btn = <LoginButton onClick={handleLoginClick} />;
+    }
+
+    return (
+        <div>
+            <Greeting isLoggedIn={isLoggedIn} />
+            {btn}
+        </div>
+    );
+}
+
+export default LoginControl;
