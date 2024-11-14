@@ -1,6 +1,6 @@
 import React from "react";
 import './AttendanceCard2.css';
-import imgs from './imgs/1.jpg';
+import img1 from './imgs/1.jpg';
 
 const students = [
     {id: 1, name: "윤이나", grade: 2, major: "인공지능소프트웨어", avatar: "https://randomuser.me/api/portraits/men/1.jpg"},
@@ -12,7 +12,8 @@ const students = [
     {id: 7, name: "이민호", grade: 3, major: "기계공학", avatar: "https://randomuser.me/api/portraits/men/7.jpg"},
     {id: 8, name: "조아영", grade: 4, major: "심리학", avatar: "https://randomuser.me/api/portraits/women/8.jpg"},
     {id: 9, name: "또 하나의 나", grade: 19, major: "타짜", avatar: "https://i.namu.wiki/i/yluYzXHS0xQmzwTFPjgWjrLHrfsh_0rpvELJrHKwQr7cB3C6FCgiUAPi5y2Yfnlrq2d2Lm0vwRKBoQmcZhzb2Q.webp"},
-    {id: 10, name: "윌슨", grade: 24, major: "친구학", avatar: "src/chp10/avatarAttendance/imgs/1.jpg"},
+    {id: 10, name: "윌슨", grade: 24, major: "친구학", avatar: img1
+    },
 
 ];
 
