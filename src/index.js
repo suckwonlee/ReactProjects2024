@@ -35,12 +35,15 @@ import Calculator from "./chp12/Calculator";
 import Calculator2 from "./chp12/Calculator2";
 import Calculator3 from "./chp12/Calculator3";
 import DistanceConverter from "./chp12/distance/DistanceConverter";
+import ProfileCard from "./chp13/ProfileCard";
+import MainPage from "./chp13/MainPage";
+import AirApp from "./chp13_airbnbHome/AirApp";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
     root.render(
         <React.StrictMode>
-            <DistanceConverter/>
+            <AirApp/>
         </React.StrictMode>
     );
 
